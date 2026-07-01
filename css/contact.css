@@ -1,0 +1,135 @@
+/* ===== CONTACT ===== */
+.contact { position: relative; z-index: 1; }
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  background: rgba(22,22,42,0.6);
+  border: 1px solid rgba(30,32,53,0.6);
+  border-radius: 24px;
+  padding: 48px;
+  margin-bottom: 48px;
+}
+
+.contact-info { flex: 1; }
+
+.contact-info h3 {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: 12px;
+}
+
+.contact-info p {
+  font-size: 15px;
+  color: var(--text-muted);
+  line-height: 1.8;
+  margin-bottom: 32px;
+}
+
+.contact-items { display: flex; flex-direction: column; gap: 16px; }
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.contact-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  background: var(--grad);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.contact-item small {
+  display: block;
+  font-size: 11px;
+  color: var(--text-dim);
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.contact-item a,
+.contact-item span {
+  font-size: 14px;
+  color: var(--secondary);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.contact-item span { color: var(--text-muted); }
+
+.contact-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Social row */
+.social-row {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.social-circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.social-circle i {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--card);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  color: var(--text-muted);
+  transition: all 0.2s ease;
+}
+
+.social-circle:hover i {
+  background: var(--grad);
+  border-color: transparent;
+  color: #fff;
+  box-shadow: 0 0 20px rgba(124,58,237,0.4);
+}
+
+.social-circle span {
+  font-size: 11px;
+  color: var(--text-dim);
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding-top: 32px;
+  border-top: 1px solid var(--border);
+}
+
+.footer p {
+  font-size: 13px;
+  color: var(--text-dim);
+}
+
+@media (max-width: 900px) {
+  .contact-card { flex-direction: column; gap: 32px; padding: 28px; }
+  .contact-info h3 { font-size: 22px; }
+}

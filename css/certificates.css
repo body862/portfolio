@@ -1,0 +1,136 @@
+/* ===== CERTIFICATES ===== */
+.certificates { position: relative; z-index: 1; }
+
+.cert-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
+.cert-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: rgba(22,22,42,0.6);
+  border: 1px solid rgba(30,32,53,0.6);
+  border-radius: 20px;
+  padding: 24px;
+  width: 340px;
+  transition: all 0.3s ease;
+}
+
+.cert-card:hover {
+  border-color: rgba(124,58,237,0.4);
+  box-shadow: 0 0 30px rgba(124,58,237,0.1);
+  transform: translateY(-4px);
+}
+
+.cert-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  background: var(--grad);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.cert-icon-2 { background: var(--grad-3); }
+.cert-icon-3 { background: var(--grad-2); }
+
+.cert-info h3 {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 2px;
+}
+
+.cert-info p {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+
+.cert-tags { display: flex; gap: 8px; }
+
+.cert-tag {
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-size: 10px;
+  font-weight: 600;
+  background: rgba(124,58,237,0.1);
+  border: 1px solid rgba(124,58,237,0.25);
+  color: var(--primary-light);
+}
+
+/* Education */
+.edu-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  background: rgba(22,22,42,0.6);
+  border: 1px solid rgba(30,32,53,0.6);
+  border-radius: 20px;
+  padding: 32px;
+  transition: all 0.3s ease;
+}
+
+.edu-card:hover {
+  border-color: rgba(124,58,237,0.4);
+  box-shadow: 0 0 30px rgba(124,58,237,0.1);
+}
+
+.edu-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 16px;
+  background: var(--grad);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.edu-info h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.edu-degree {
+  font-size: 14px;
+  color: var(--primary);
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.edu-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.edu-meta span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.edu-meta i { color: var(--secondary); }
+
+.edu-courses { display: flex; flex-wrap: wrap; gap: 8px; }
+
+@media (max-width: 768px) {
+  .cert-card { width: 100%; }
+  .edu-card { flex-direction: column; }
+}

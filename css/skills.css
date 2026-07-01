@@ -1,0 +1,83 @@
+/* ===== SKILLS ===== */
+.skills {
+  background: rgba(18,18,26,0.4);
+  position: relative;
+  z-index: 1;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 64px;
+}
+
+.skill-item { text-align: center; }
+
+.skill-circle {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 14px;
+}
+
+.skill-circle svg {
+  width: 120px;
+  height: 120px;
+  transform: rotate(-90deg);
+}
+
+.skill-circle .track {
+  fill: none;
+  stroke: rgba(30,32,53,0.8);
+  stroke-width: 8;
+}
+
+.skill-circle .progress {
+  fill: none;
+  stroke-width: 8;
+  stroke-linecap: round;
+  stroke-dasharray: 314;
+  stroke-dashoffset: 314;
+  stroke: url(#skillGrad);
+  transition: stroke-dashoffset 1.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.skill-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.skill-info i {
+  display: block;
+  font-size: 18px;
+  color: var(--primary);
+  margin-bottom: 2px;
+}
+
+.skill-pct {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.skill-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.skills-chips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 48px;
+}
+
+/* SVG gradient def hidden */
+.svg-defs { position: absolute; width: 0; height: 0; }
